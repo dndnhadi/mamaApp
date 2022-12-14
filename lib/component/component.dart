@@ -9,7 +9,7 @@ Widget buildTextFormFild({
   return Container(
     height: 40.0,
     child: TextFormField(
-         maxLines: maxLineNumber,
+      maxLines: maxLineNumber,
       keyboardType: keyborardType,
       controller: controller,
       decoration: InputDecoration(
@@ -22,17 +22,7 @@ Widget buildTextFormFild({
   );
 }
 
-
-  Widget buildSizeBox(
-      {required var height}
-      )
-  {
-    return SizedBox(
-      height: height,
-    );
-  }
-
- Widget buildButton({
+Widget buildButton({
   required Text buttonName,
   required  VoidCallback? onPressed,
 })
@@ -47,6 +37,17 @@ Widget buildTextFormFild({
     ),
   );
 }
+
+
+Widget buildSizeBox(
+    {required var height}
+    )
+{
+  return SizedBox(
+    height: height,
+  );
+}
+
 
 Widget buildCalcolateTextField({
   required Text text,
